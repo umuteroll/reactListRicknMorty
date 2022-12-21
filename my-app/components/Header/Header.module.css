@@ -1,0 +1,8 @@
+.navbar {
+display: flex;
+justify-content: center;
+}
+.banner{
+width: 30vw;
+height: 15vh;
+}
