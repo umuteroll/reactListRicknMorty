@@ -1,27 +1,29 @@
 import React from "react";
 import styles from "./Listing.module.css";
-
+import Row    from '../Row/Row'
 function Listing() {
   return (
-    <div className={styles.container}>
-      <p>Locations</p>
-      <div className={styles.listHeader}>
-        <span>type</span>
-        <span>dimension</span>
-        <span>resident</span>
-      </div>
-      <hr />
-      <div className={styles.listRow}>
-        <div className={styles.row}>
-          <img src="portal.png" className={styles.avatar}></img>
-          <div className={styles.rowInfo}>
-            <span>planet</span>
-            <span>c-137</span>
-            <span>50</span>
-          </div>
-        </div>
-      </div>
+    <>
+<h1 className={styles.header}>List of Locations</h1>
+<section className={`mb-5 container`}>
+  <div className="card">
+    <div className="card-body shadow"> 
+    <Row></Row>
+    <Row></Row>
+    <Row></Row>
+    <Row></Row>
+    <Row></Row>
+    <Row></Row>
+    <Row></Row>
+    <Row></Row>
+    <Row></Row>
     </div>
+  </div>
+</section>
+
+
+    </>
+
   );
 }
 
