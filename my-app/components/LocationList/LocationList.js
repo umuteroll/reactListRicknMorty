@@ -7,13 +7,16 @@ import styles from './LocationList.module.css'
 
 function LocationList() {
   return (
+    <>
+
     <div className={styles.container}> 
     <Header></Header>
     <Search></Search>
     <Listing></Listing>
     <Footer></Footer>
     </div>
-    
+    </>
+
    
   );
 }
