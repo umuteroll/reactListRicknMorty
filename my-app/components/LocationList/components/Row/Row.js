@@ -15,7 +15,7 @@ function Row({locationProp}) {
         </div>
       </div>
       <div className="d-flex align-items-center"> 
-      <Link href="/some-route">
+      <Link href="/characters">
       <input className="btn btn-primary shadow m-1 me-3 h-10" type="button" value="Detaya Git!"/>
       </Link>
       </div>
