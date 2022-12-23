@@ -20,13 +20,11 @@ function Listing() {
     <>
 <h1 className={styles.header}>List of Locations</h1>
 <section className={`mb-5 container`}>
-  <div className="card">
-    <div className="card-body shadow" onClick={deneme}> 
+ 
     {state.map((item)=>(
        <Row key={item.id} locationProp={item}></Row>
    ))}
-    </div>
-  </div>
+ 
 </section>
 
 
