@@ -6,16 +6,12 @@ import GridListing from "./components/GridListing";
 function CharacterList() {
   return (
     <>
-
     <div className='d-flex flex-column justify-content-start align-items-center'> 
-    <Header></Header>
-    <Search></Search>
-    <GridListing></GridListing>
+      <Header></Header>
+      <Search></Search>
+      <GridListing></GridListing>
     </div>
     </>
-
-   
   );
 }
-
 export default CharacterList;

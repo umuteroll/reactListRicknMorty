@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Characters() {
   return (
     <>
-    <CharacterList></CharacterList>
+     <CharacterList></CharacterList>
     </>
   )
 }
