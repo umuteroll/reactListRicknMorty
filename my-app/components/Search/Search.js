@@ -22,7 +22,7 @@ const handleChange = (event) => {
       <input
         id="rick-and-morty-search"
         type="search"
-        placeholder="Enter a Location"
+        placeholder="Filter"
         className= {`${styles.input} form-control form-control-lg shadow`  }
         onChange={handleChange}
         value={value}
