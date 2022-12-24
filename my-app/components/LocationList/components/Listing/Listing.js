@@ -11,10 +11,7 @@ function Listing() {
   useEffect(() => {
     getLocationList()
 },[])
-  const deneme = () =>{
-    console.log(state);
-    console.log(loading);
-  }
+  
   if(loading == false){ 
   return (
     <>
@@ -35,3 +32,6 @@ function Listing() {
 }
 
 export default Listing;
+
+
+
