@@ -7,8 +7,9 @@ function Card({characterProp}) {
 
   return (
     <>
-<div className={`${styles.cardWidth} col card shadow m-1`  }>
-    <img src={characterProp.image} className="card-img-top mt-2" alt="..."/>
+<div className={`col mb-4`}>
+  <div className="card shadow-lg h-100"> 
+    <img src={characterProp.image} className="card-img-top" alt="..."/>
     <div className="card-body">
         <h5 className="card-title d-flex flex-row align-items-center">
           {characterProp.name}
@@ -21,6 +22,7 @@ function Card({characterProp}) {
           <span> <b>Origin :  </b> {characterProp.origin.name} </span> 
         </div>
      </div>
+  </div>
 </div>
 
     </>
