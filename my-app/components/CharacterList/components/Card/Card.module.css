@@ -1,3 +1,10 @@
 .cardWidth {
   width: 18rem;
 }
+.circle {
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-right: 0.375rem;
+    margin-left: 0.375rem;
+    border-radius: 50%;
+    }
