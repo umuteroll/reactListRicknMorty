@@ -8,7 +8,7 @@ function CharacterList() {
     <>
     <div className='d-flex flex-column justify-content-start align-items-center'> 
       <Header></Header>
-      <Search></Search>
+      <Search prop='Character'></Search>
       <GridListing></GridListing>
     </div>
     </>

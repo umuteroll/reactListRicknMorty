@@ -9,7 +9,7 @@ function LocationList() {
     <>
     <div className={styles.container}> 
       <Header></Header>
-      <Search></Search>
+      <Search prop='Location'></Search>
       <Listing></Listing>
     </div>
     </>

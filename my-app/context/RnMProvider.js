@@ -24,7 +24,7 @@ const RnMProvider = ({ children }) => {
     const getFilteredLocationList = async (locationName) => {
       setLoading(true);
       try{
-        const response = await service.get(`/location/?name=${locationName}`);
+        const response = await service.get(`/location/?type=${locationName}`);
         setState(response.data.results);
       }
       catch{
@@ -54,8 +54,16 @@ const RnMProvider = ({ children }) => {
       }
     };
 
+    const getFilteredCharacter = (characterName) => {
+      debugger;
+      const filteredCharacter = [];
+      filteredCharacter.push(characterState.filter(val =>  val.name.includes(characterName)));    
+      setCharacterState(filteredCharacter);
+    };  
+    
+
   return (
-    <RnMContext.Provider value={{ state, characterState, getLocationList, getCharacterList, getFilteredLocationList,loading }}>
+    <RnMContext.Provider value={{ state, characterState, getLocationList, getCharacterList,getFilteredLocationList,getFilteredCharacter,loading }}>
       {children}
     </RnMContext.Provider>
   );

@@ -1,8 +1,13 @@
-import React  from 'react';
+import React , { useState, useContext } from 'react';
 import styles from "./Search.module.css";
+import RnMContext from '../../context/RnMContext'
 
+function Search(prop) {
+const { getFilteredLocationList, getFilteredCharacter } = useContext(RnMContext);
+const [value, setValue] = useState('');
 const getFilteredResult = () => {
-  if(prop == 'Location'){
+  if(prop.prop == 'Location'){
+    debugger;
     getFilteredLocationList(value);
   }
   else{
@@ -10,9 +15,8 @@ const getFilteredResult = () => {
   }
 }
 const handleChange = (event) => {
+  setValue(event.target.value);
 }
-
-function Search() {
   return (
     <div className='container mt-5 mb-5 d-flex flex-row'>
       <input
@@ -21,8 +25,9 @@ function Search() {
         placeholder="Enter a Location"
         className= {`${styles.input} form-control form-control-lg shadow`  }
         onChange={handleChange}
+        value={value}
       />
-      <input className="btn btn-primary shadow m-1 me-3 h-10" type="button" value="Bul" />
+      <input className="btn btn-primary shadow m-1 me-3 h-10" type="button" value="Bul" onClick={getFilteredResult} />
 
     </div>
   );
